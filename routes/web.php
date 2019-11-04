@@ -14,6 +14,7 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
+Route::get('/test','TestsController@test') ->name('test');
 
 Route::get('/','StaticPagesController@home') ->name('home');
 Route::get('help','StaticPagesController@help') ->name('help');
