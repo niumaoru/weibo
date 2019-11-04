@@ -19,7 +19,11 @@ class UserPolicy
         //注释掉构造方法
     }*/
 
-    public function update(User $currentuser,User $user){
-        return $currentuser->id === $user->id;
+    public function update(User $currentUser,User $user){
+        return $currentUser->id === $user->id;
+    }
+
+    public function destroy(User $currentUser,User $user){
+        return $currentUser->is_admin && $currentUser->id !== $user->id;
     }
 }
