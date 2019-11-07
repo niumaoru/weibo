@@ -7,16 +7,16 @@ use Illuminate\Http\Request;
 class TestsController extends Controller
 {
     public function test(){
-        $city  = "San Francisco";
-        $state = "CA";
-        $event = "SIGGRAPH";
+        //$this->cube();
 
-        $location_vars = array("city", "state");
-
-        print_r('<pre>');
-        print_r($location_vars);
-        $result = compact("event", "note", $location_vars);
-
-        print_r($result);
+        $arr1 = ['a', 'b'];
+        $arr2 = array_map("strtoupper", $arr1);
+        print_r($arr2);
     }
+
+    function cube($n)
+    {
+        return($n * $n * $n);
+    }
+
 }
