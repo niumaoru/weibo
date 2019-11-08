@@ -18,7 +18,7 @@
                         {!! $statuses->render() !!}
                     </div>
                 @else
-                    <p>没有数据！</p>
+                    <p>主人有点懒，没有发布任何动态~</p>
                 @endif
             </section>
         </div>
