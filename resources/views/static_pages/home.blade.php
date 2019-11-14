@@ -1,4 +1,5 @@
 @extends('layouts.default')
+@section('title','首页')
 
 @section('content')
     @if (Auth::check())
@@ -22,9 +23,9 @@
         </div>
     @else
         <div class="jumbotron">
-            <h1>Hello Laravel</h1>
+            <h1>Hello ~~</h1>
             <p class="lead">
-                你现在所看到的是 <a href="https://learnku.com/courses/laravel-essential-training">Laravel 入门教程</a> 的示例项目主页。
+                知道您会来，所以我在等，主人可以在这儿 <a href="{{ route('login') }}">登录</a> 微博，开启一段新的旅程……
             </p>
             <p>
                 一切，将从这里开始。
